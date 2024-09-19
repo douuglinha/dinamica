@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Prime - Jogo da Forca</title>
+    <!-- Link para Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="forca.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet"> <!-- Fonte estilo gamer -->
+</head>
+<body class="bg-dark text-light">
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1 class="display-4 title-animation">Jogo da Forca Alfa Prime</h1>
+        <p class="lead sub-title-animation">Participe do nosso jogo e ganhe prêmios especiais seguindo nosso Instagram!</p>
+    </header>
+
+    <!-- Seção da Forca -->
+    <div id="forca-game" class="text-center mt-5">
+        <h2 class="text-warning section-title">Jogo da Forca</h2>
+        <p id="dica" class="lead"></p> <!-- Local onde será exibida a dica da palavra -->
+        <p id="word-display" class="word-display">_ _ _ _ _</p>
+        <p>Tentativas restantes: <span id="remaining-attempts">6</span></p>
+        <input type="text" id="guess-input" maxlength="1" placeholder="Digite uma letra" class="form-control w-25 mx-auto text-center">
+        <button id="submit-guess" class="btn btn-danger mt-3 animated-btn">Adivinhar</button>
+        <p id="message-forca" class="lead mt-3"></p>
+    </div>
+
+    <!-- Seção do Instagram CTA -->
+    <section id="instagram-cta" class="bg-light text-center py-4 mt-5">
+        <h2 class="section-title text-dark">Concluiu o jogo?</h2>
+        <p>Siga-nos no Instagram <a href="https://www.instagram.com/alfa.prime_/" target="_blank">@alfa.prime_</a> e envie-nos um print do jogo completo para ganhar um desconto especial!</p>
+        <p>Ou marque-nos usando a hashtag <strong>#AlfaPrimeDinamicas</strong> em uma publicação para participar de sorteios exclusivos!</p>
+        <a href="https://www.instagram.com/alfa.prime_/" target="_blank" class="btn btn-primary animated-btn">Siga-nos no Instagram</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>Siga-nos no Instagram para mais promoções e novidades!</p>
+    </footer>
+
+    <!-- Bootstrap JS and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="forca.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+/* === Fundo da Página === */
+body {
+    background-color: #1c1c1c;
+    background-image: url('/alfadinamicas.png'); /* Use uma imagem de fundo de fantasia aqui */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; /* Alterei a fonte para Orbitron para um estilo mais dinâmico */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background: linear-gradient(to bottom, #033d88, #000000);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+header p {
+    font-size: 18px;
+    color: #ffebcd;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilização das Pistas e do Conteúdo Principal */
+#game {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    margin-top: 40px;
+}
+
+/* Estilização das Pistas e do Conteúdo Principal */
+h2, h4 {
+    color: #ffebcd;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+#crossword {
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#crossword td {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    border: 1px solid #444;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* === Palavras para Encontrar === */
+/* Estilo das palavras em uma única linha */
+.list-inline {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens igualmente */
+    align-items: center;
+    flex-wrap: nowrap; /* Evita a quebra de linha */
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos Itens da Lista - Ajustar o Tamanho */
+.list-inline-item {
+    margin: 5px;
+    flex-grow: 1; /* Faz com que os itens cresçam igualmente */
+    text-align: center;
+}
+
+/* Estilo dos Botões de Palavras */
+.list-group-item {
+    background-color: rgba(255, 69, 0, 0.8);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px; /* Ajuste o padding conforme necessário */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    min-width: 120px; /* Largura mínima para não ficar muito pequeno */
+}
+
+.found-word {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+/* === Estilo da Tabela === */
+#word-search {
+    margin: 0 auto;
+}
+
+#word-search td {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    border: 1px solid #444;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+/* === Estilo de Seleção e Palavras Encontradas === */
+.selected {
+    background-color: lightgreen !important; /* Verde claro para letras selecionadas temporariamente */
+    color: black;
+}
+
+.found {
+    background-color: darkgreen !important; /* Verde escuro para letras das palavras encontradas */
+    color: white;
+}
+
+/* Botões com animação de pulse */
+button, .instagram-button {
+    background: linear-gradient(to right, #ff0000, #ff8c00);
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: background 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+button:hover, .instagram-button:hover {
+    background: linear-gradient(to right, #ff8c00, #ffd700);
+}
+
+/* Animação de Pulse */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+}
+
+#verify-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: linear-gradient(to right, #ff4500, #ff8c00);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#verify-btn:hover {
+    background: linear-gradient(to right, #ff8c00, #ffd700);
+}
+
+/* Estilo da Seção do Instagram CTA */
+#instagram-cta {
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+#instagram-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background: linear-gradient(to bottom, #033d88, #000000) !important;
+}
+a {
+    color: red;
+    text-decoration: underline;
+}
+
+#instagram-cta p {
+    font-size: 18px;
+    color: #ffebcd;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #ff0000, #000000);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}

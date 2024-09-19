@@ -1,0 +1,100 @@
+/* Aplicando estilo gamer com fonte Orbitron */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 40%, rgba(0, 50, 255, 0.9) 100%);
+    color: #ffffff;
+  }
+  
+  .hero-section {
+    background-image: url('alfadinamicas.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffcc00;
+  }
+  
+  .sub-title-animation {
+    font-size: 1.5rem;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
+  }
+  
+  .title-animation {
+    font-size: 3.5rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  .animated-btn {
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .footer-section {
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 20px 0;
+  }
+  

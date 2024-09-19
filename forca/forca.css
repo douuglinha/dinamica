@@ -1,0 +1,112 @@
+/* Estilo gamer com a fonte Orbitron */
+body {
+  background-color: #1c1c1c;
+  background-image: url('/alfadinamicas.png'); /* Use uma imagem de fundo de fantasia aqui */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif; /* Alterei a fonte para Orbitron para um estilo mais dinâmico */
+}
+  
+header {
+  background: linear-gradient(to bottom, #033d88, #000000);
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+  
+  h1, h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    color: #ffcc00;
+  }
+  
+  .word-display {
+    font-size: 2rem;
+    letter-spacing: 10px;
+  }
+  
+  .animated-btn {
+    font-size: 1.2rem;
+    animation: pulse 2s infinite;
+  }
+  
+  .sub-title-animation {
+    font-size: 1.2rem;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    animation-delay: 1s;
+  }
+  
+  .title-animation {
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(255, 0, 0, 0.7);
+    }
+  }
+  
+  /* Estilo da Seção do Instagram CTA */
+#instagram-cta {
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 50px;
+  box-shadow: 0 10px 25px rgb(0, 0, 0);
+}
+
+#instagram-cta h2 {
+  color: #ffffff;
+  font-size: 28px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background: linear-gradient(to bottom, #033d88, #000000) !important;
+}
+a {
+  color: red;
+  text-decoration: underline;
+}
+
+#instagram-cta p {
+  font-size: 18px;
+  color: #ffebcd;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to bottom, #ff0000, #000000);
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+  

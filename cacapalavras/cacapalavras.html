@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Prime - Palavras Cruzadas</title>
+    <!-- Link para Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cacapalavras.css">
+</head>
+<body>
+
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Caça Palavras Alfa Prime</h1>
+        <p>Encontre as palavras escondidas relacionadas à nossa loja e ganhe prêmios especiais seguindo nosso Instagram!</p>
+    </header>
+    
+
+    <!-- Conteúdo principal -->
+    <!-- Container Principal -->
+        <!-- Container Principal -->
+            <div class="container">
+                <!-- Palavras para Encontrar e Grade de Palavras Cruzadas -->
+                <div class="col-md-12">
+                    <h2 class="text-center">Palavras para Encontrar</h2>
+                    <ul id="word-list" class="list-group list-inline text-center">
+                        <li class="list-inline-item list-group-item" data-word="XIAOMI">XIAOMI</li>
+                        <li class="list-inline-item list-group-item" data-word="MANUTENCAO">MANUTENÇÃO</li>
+                        <li class="list-inline-item list-group-item" data-word="APPLE">APPLE</li>
+                        <li class="list-inline-item list-group-item" data-word="ATENDIMENTO">ATENDIMENTO</li>
+                        <li class="list-inline-item list-group-item" data-word="DINAMICA">DINÂMICA</li>
+                    </ul>
+                    <div id="puzzle-container" class="text-center mt-4">
+                        <table id="word-search" class="table table-bordered"></table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão de Verificação -->
+            <div class="text-center mt-4">
+                <button id="verify-btn" class="btn btn-primary">Verificar</button>
+                <p id="message" style="display: none; color: red;"></p>
+            </div>
+
+
+    
+
+    <!-- Seção para Exibir o Código Secreto -->
+    <section id="codigo-secreto" class="text-center py-5" style="display: none;">
+        <h2>Parabéns! Você completou o jogo.</h2>
+        <p>Seu código secreto para resgatar o prêmio é: <strong id="codigo"></strong></p>
+        <a href="#" class="btn btn-primary">Resgatar Código</a>
+    </section>
+    
+
+
+    <!-- Seção do Instagram CTA -->
+    <section id="instagram-cta" class="bg-light text-center py-4 mt-5">
+        <h2>Concluiu o jogo?</h2>
+        <p>Siga-nos no Instagram <a href="https://www.instagram.com/alfa.prime_/" target="_blank">@alfa.prime_</a> e envie-nos um print do jogo completo para ganhar um desconto especial!</p>
+        <p>Ou marque-nos usando a hashtag <strong>#AlfaPrimeDinamicas</strong> em uma publicação para participar de sorteios exclusivos!</p>
+        <a href="https://www.instagram.com/alfa.prime_/" target="_blank" class="btn btn-primary">Siga-nos no Instagram</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>Siga-nos no Instagram para mais promoções e novidades!</p>
+    </footer>
+
+    <!-- Bootstrap JS and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cacapalavras.js"></script>
+</body>
+</html>
